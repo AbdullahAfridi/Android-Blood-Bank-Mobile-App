@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MakeRequestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFF"
+        android:screenReaderFocusable="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:cardElevation="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#F3EAEA" >
+            <TextView
+                android:padding="18dp"
+                android:textColor="#200000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Write down whatever the help you need and add your location image so it would be easy for our community to reach you out."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.cardview.widget.CardView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_background"
+            android:layout_margin="8dp">
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#200000"
+            android:textSize="18sp"
+            android:minLines="6"
+            android:maxLines="10"
+            android:hint=" Message"
+            android:textColorHint="#200000"
+            android:textAlignment="gravity"
+            android:gravity="top"
+            android:padding="10dp"
+            android:background="@null"
+            android:cursorVisible="false"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image"
+                android:padding="8dp"
+                android:src="@drawable/ic_image_black_24dp"
+                android:layout_width="150dp"
+                android:layout_height="130dp"/>
+            <TextView
+                android:id="@+id/img"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#D81313"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="@string/choose_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/post_req"
+            android:layout_width="match_parent"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textAlignment="gravity"
+            android:text="Post Request"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            android:background="@drawable/log_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </LinearLayout>
+
+</ScrollView>
